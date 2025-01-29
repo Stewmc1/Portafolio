@@ -1,0 +1,66 @@
+.content {
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 5%,
+    rgba(63, 63, 64, 1) 25%,
+    rgba(155, 233, 213, 0.7215336818321079) 50%,
+    rgba(63, 63, 64, 0.7271359227284664) 75%,
+    rgba(0, 0, 0, 1) 95%
+  );
+  width: 80%;
+  display: grid;
+  place-items: center;
+  margin: auto;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 110px;
+}
+
+.projects {
+  width: 100%;
+}
+
+.game {
+  width: 20%;
+  padding: 20px;
+  float: left;
+  background-color: transparent;
+  cursor: pointer;
+  border: transparent;
+}
+.game:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 0.5s;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.task {
+  width: 20%;
+  padding: 20px;
+  float: right;
+  background-color: transparent;
+  cursor: pointer;
+  border: transparent;
+}
+
+.task:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 0.5s;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.skills {
+  width: 100%;
+}
+
+img {
+  display: inline-block;
+  margin: 15px;
+}
+
+img:hover {
+  transform: scale(1.1);
+  transition: 0.8s;
+}

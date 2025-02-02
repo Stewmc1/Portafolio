@@ -1,10 +1,5 @@
 .content {
-  background: rgb(185, 250, 208);
-  background: linear-gradient(
-    180deg,
-    rgba(185, 250, 208, 1) 20%,
-    rgba(191, 245, 214, 1) 50%
-  );
+  background-color: transparent;
   width: 80%;
   display: grid;
   place-items: center;
@@ -14,37 +9,60 @@
   text-align: center;
   margin-top: 110px;
 }
+.content:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 0.2s;
+  opacity: 0.9;
+}
+
+.skills {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  animation: image 20s linear infinite;
+  transform-style: preserve-3d;
+  perspective: 400px;
+}
+
+@keyframes image {
+  0% {
+    transform: perspective(500px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(500px) rotateY(360deg);
+  }
+}
+
+.skills .img {
+  width: 30px;
+  height: 30px;
+  background: var(--img);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateY(calc(var(--i) * 60deg))
+    translateZ(100px);
+}
 
 .projects {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
+.task,
 .game {
-  width: 20%;
   padding: 20px;
-  float: left;
   background-color: transparent;
   cursor: pointer;
   border: transparent;
   color: black;
 }
+
+.task:hover,
 .game:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-  transition: 0.5s;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-}
-
-.task {
-  width: 20%;
-  padding: 20px;
-  float: right;
-  background-color: transparent;
-  cursor: pointer;
-  border: transparent;
-  color: black;
-}
-
-.task:hover {
   background-color: rgba(255, 255, 255, 0.5);
   transition: 0.5s;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);

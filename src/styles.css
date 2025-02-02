@@ -1,4 +1,6 @@
 body {
-  background-color: rgb(205, 201, 201);
+  background-image: url(./assets/1315629.png);
+  background-size: cover;
   color: black;
+  overflow: hidden;
 }

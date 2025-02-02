@@ -6,42 +6,20 @@
     pasiones como la Formula 1, ver anime, jugar videojuegos y leer libros, me
     gustaria compartir mis conocimientos y experiencias con ustedes. :)
   </p>
+  <h3>Tecnologias</h3>
   <div class="skills">
-    <h3>Tecnologias</h3>
-
-    <img
-      src="https://img.icons8.com/color/48/000000/html-5.png"
-      alt="html"
-      style="display: inline-block"
-    />
-    <img
-      src="https://img.icons8.com/color/48/000000/css3.png"
-      alt="css"
-      style="display: inline-block"
-    />
-    <img
-      src="https://img.icons8.com/color/48/000000/javascript.png"
-      alt="javascript"
-      style="display: inline-block"
-    />
-    <img
-      src="https://img.icons8.com/color/48/000000/angularjs.png"
-      alt="angular"
-      style="display: inline-block"
-    />
-    <img
-      src="https://img.icons8.com/color/48/000000/github--v1.png"
-      alt="github"
-      style="display: inline-block"
-    />
-    <img
-      src="https://img.icons8.com/color/48/000000/python.png"
-      alt="python"
-      style="display: inline-block"
-    />
+    @for (item of links; track item; let i = $index){
+    <div
+      class="img"
+      style="
+        --i: {{ i }};
+        --img: url({{ item }});
+      "
+    ></div>
+    }
   </div>
+  <h3>Proyectos</h3>
   <div class="projects">
-    <h3>Proyectos</h3>
     <a href="https://github.com/Stewmc1/adivina-la-bandera" target="_blank">
       <button class="game">Adivina la bandera</button>
     </a>

@@ -1,6 +1,10 @@
 body {
-  background-image: url(./assets/1315629.png);
-  background-size: cover;
+  background: rgb(83, 149, 177);
+  background: radial-gradient(
+    circle,
+    rgba(83, 149, 177, 1) 0%,
+    rgba(25, 98, 83, 1) 100%
+  );
   color: black;
   overflow: hidden;
 }
